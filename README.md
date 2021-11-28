@@ -36,165 +36,231 @@ Algorithmic_Trading_Python/issues">Request Feature</a>
   </p>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+[comment]: <> (<!-- TABLE OF CONTENTS -->)
+
+[comment]: <> (<details>)
+
+[comment]: <> (  <summary>Table of Contents</summary>)
+
+[comment]: <> (  <ol>)
+
+[comment]: <> (    <li>)
+
+[comment]: <> (      <a href="#about-the-project">About The Project</a>)
+
+[comment]: <> (      <ul>)
+
+[comment]: <> (        <li><a href="#built-with">Built With</a></li>)
+
+[comment]: <> (      </ul>)
+
+[comment]: <> (    </li>)
+
+[comment]: <> (    <li>)
+
+[comment]: <> (      <a href="#getting-started">Getting Started</a>)
+
+[comment]: <> (      <ul>)
+
+[comment]: <> (        <li><a href="#prerequisites">Prerequisites</a></li>)
+
+[comment]: <> (        <li><a href="#installation">Installation</a></li>)
+
+[comment]: <> (      </ul>)
+
+[comment]: <> (    </li>)
+
+[comment]: <> (    <li><a href="#usage">Usage</a></li>)
+
+[comment]: <> (    <li><a href="#roadmap">Roadmap</a></li>)
+
+[comment]: <> (    <li><a href="#contributing">Contributing</a></li>)
+
+[comment]: <> (    <li><a href="#license">License</a></li>)
+
+[comment]: <> (    <li><a href="#contact">Contact</a></li>)
+
+[comment]: <> (    <li><a href="#acknowledgments">Acknowledgments</a></li>)
+
+[comment]: <> (  </ol>)
+
+[comment]: <> (</details>)
 
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+[comment]: <> (<!-- ABOUT THE PROJECT -->)
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[comment]: <> (## About The Project)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
+[comment]: <> ([![Product Name Screen Shot][product-screenshot]]&#40;https://example.com&#41;)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+[comment]: <> (Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`)
 
-
-
-### Built With
-
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+[comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
+[comment]: <> (### Built With)
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+[comment]: <> (* [Next.js]&#40;https://nextjs.org/&#41;)
 
-### Prerequisites
+[comment]: <> (* [React.js]&#40;https://reactjs.org/&#41;)
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+[comment]: <> (* [Vue.js]&#40;https://vuejs.org/&#41;)
 
-### Installation
+[comment]: <> (* [Angular]&#40;https://angular.io/&#41;)
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+[comment]: <> (* [Svelte]&#40;https://svelte.dev/&#41;)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+[comment]: <> (* [Laravel]&#40;https://laravel.com&#41;)
+
+[comment]: <> (* [Bootstrap]&#40;https://getbootstrap.com&#41;)
+
+[comment]: <> (* [JQuery]&#40;https://jquery.com&#41;)
+
+[comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
+[comment]: <> (<!-- GETTING STARTED -->)
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+[comment]: <> (## Getting Started)
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+[comment]: <> (This is an example of how you may give instructions on setting up your project locally.)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+[comment]: <> (To get a local copy up and running follow these simple example steps.)
 
+[comment]: <> (### Prerequisites)
 
+[comment]: <> (This is an example of how to list things you need to use the software and how to install them.)
 
-<!-- ROADMAP -->
-## Roadmap
+[comment]: <> (* npm)
 
-- [] Feature 1
-- [] Feature 2
-- [] Feature 3
-    - [] Nested Feature
+[comment]: <> (  ```sh)
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+[comment]: <> (  npm install npm@latest -g)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+[comment]: <> (  ```)
 
+[comment]: <> (### Installation)
 
+[comment]: <> (1. Get a free API Key at [https://example.com]&#40;https://example.com&#41;)
 
-<!-- CONTRIBUTING -->
-## Contributing
+[comment]: <> (2. Clone the repo)
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+[comment]: <> (   ```sh)
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+[comment]: <> (   git clone https://github.com/github_username/repo_name.git)
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+[comment]: <> (   ```)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+[comment]: <> (3. Install NPM packages)
 
+[comment]: <> (   ```sh)
 
+[comment]: <> (   npm install)
 
-<!-- LICENSE -->
-## License
+[comment]: <> (   ```)
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+[comment]: <> (4. Enter your API in `config.js`)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+[comment]: <> (   ```js)
 
+[comment]: <> (   const API_KEY = 'ENTER YOUR API';)
 
+[comment]: <> (   ```)
 
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+[comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
 
 
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+[comment]: <> (<!-- USAGE EXAMPLES -->)
 
-* []()
-* []()
-* []()
+[comment]: <> (## Usage)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+[comment]: <> (Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.)
+
+[comment]: <> (_For more examples, please refer to the [Documentation]&#40;https://example.com&#41;_)
+
+[comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
+
+
+
+[comment]: <> (<!-- ROADMAP -->)
+
+[comment]: <> (## Roadmap)
+
+[comment]: <> (- [] Feature 1)
+
+[comment]: <> (- [] Feature 2)
+
+[comment]: <> (- [] Feature 3)
+
+[comment]: <> (    - [] Nested Feature)
+
+[comment]: <> (See the [open issues]&#40;https://github.com/github_username/repo_name/issues&#41; for a full list of proposed features &#40;and known issues&#41;.)
+
+[comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
+
+
+
+[comment]: <> (<!-- CONTRIBUTING -->)
+
+[comment]: <> (## Contributing)
+
+[comment]: <> (Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.)
+
+[comment]: <> (If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".)
+
+[comment]: <> (Don't forget to give the project a star! Thanks again!)
+
+[comment]: <> (1. Fork the Project)
+
+[comment]: <> (2. Create your Feature Branch &#40;`git checkout -b feature/AmazingFeature`&#41;)
+
+[comment]: <> (3. Commit your Changes &#40;`git commit -m 'Add some AmazingFeature'`&#41;)
+
+[comment]: <> (4. Push to the Branch &#40;`git push origin feature/AmazingFeature`&#41;)
+
+[comment]: <> (5. Open a Pull Request)
+
+[comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
+
+
+
+[comment]: <> (<!-- LICENSE -->)
+
+[comment]: <> (## License)
+
+[comment]: <> (Distributed under the MIT License. See `LICENSE.txt` for more information.)
+
+[comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
+
+
+
+[comment]: <> (<!-- CONTACT -->)
+
+[comment]: <> (## Contact)
+
+[comment]: <> (Your Name - [@twitter_handle]&#40;https://twitter.com/twitter_handle&#41; - email@email_client.com)
+
+[comment]: <> (Project Link: [https://github.com/github_username/repo_name]&#40;https://github.com/github_username/repo_name&#41;)
+
+[comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
+
+
+
+[comment]: <> (<!-- ACKNOWLEDGMENTS -->)
+
+[comment]: <> (## Acknowledgments)
+
+[comment]: <> (* []&#40;&#41;)
+
+[comment]: <> (* []&#40;&#41;)
+
+[comment]: <> (* []&#40;&#41;)
+
+[comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
 
 
 
@@ -213,4 +279,4 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
--->
+
