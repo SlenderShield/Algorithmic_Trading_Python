@@ -7,8 +7,6 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -19,7 +17,7 @@
 <h3 align="center">Algorithmic Trading using Python</h3>
 
   <p align="center">
-    project_description
+    The world of trading has changed, and Algorithmic Trading is the new norm. Gone are the days of traders relying on their gut instinct to make trades. Now, high-frequency trading is the new norm. In this article, you will learn about Algorithmic Trading and the ways it has changed the financial landscape. Algorithmic Trading is a term used to describe a system of buying and selling stocks, bonds, and other securities by relying on complex mathematical formulas to analyze the markets. These algorithms are a series of instructions for a computer to execute, and they can be based on any number of factors. Traders use these algorithms to make decisions in fractions of a second. Algorithmic Trading has changed the way traders operate in the markets. Traders are no longer human beings making trades with other human beings, but rather algorithms interacting with other algorithms. This has increased the speed of trading, but it has also made it more difficult to understand the markets. Algorithmic Trading is a new way of trading that has increased the speed of trades, but has also made it more difficult to understand the markets.
     <br />
     <a href="https://github.com/slendersheild/
 Algorithmic_Trading_Python"><strong>Explore the docs »</strong></a>
@@ -40,53 +38,51 @@ Algorithmic_Trading_Python/issues">Request Feature</a>
 
 [comment]: <> (<details>)
 
-[comment]: <> (  <summary>Table of Contents</summary>)
+[comment]: <> ( <summary>Table of Contents</summary>)
 
-[comment]: <> (  <ol>)
+[comment]: <> ( <ol>)
 
-[comment]: <> (    <li>)
+[comment]: <> ( <li>)
 
-[comment]: <> (      <a href="#about-the-project">About The Project</a>)
+[comment]: <> ( <a href="#about-the-project">About The Project</a>)
 
-[comment]: <> (      <ul>)
+[comment]: <> ( <ul>)
 
-[comment]: <> (        <li><a href="#built-with">Built With</a></li>)
+[comment]: <> ( <li><a href="#built-with">Built With</a></li>)
 
-[comment]: <> (      </ul>)
+[comment]: <> ( </ul>)
 
-[comment]: <> (    </li>)
+[comment]: <> ( </li>)
 
-[comment]: <> (    <li>)
+[comment]: <> ( <li>)
 
-[comment]: <> (      <a href="#getting-started">Getting Started</a>)
+[comment]: <> ( <a href="#getting-started">Getting Started</a>)
 
-[comment]: <> (      <ul>)
+[comment]: <> ( <ul>)
 
-[comment]: <> (        <li><a href="#prerequisites">Prerequisites</a></li>)
+[comment]: <> ( <li><a href="#prerequisites">Prerequisites</a></li>)
 
-[comment]: <> (        <li><a href="#installation">Installation</a></li>)
+[comment]: <> ( <li><a href="#installation">Installation</a></li>)
 
-[comment]: <> (      </ul>)
+[comment]: <> ( </ul>)
 
-[comment]: <> (    </li>)
+[comment]: <> ( </li>)
 
-[comment]: <> (    <li><a href="#usage">Usage</a></li>)
+[comment]: <> ( <li><a href="#usage">Usage</a></li>)
 
-[comment]: <> (    <li><a href="#roadmap">Roadmap</a></li>)
+[comment]: <> ( <li><a href="#roadmap">Roadmap</a></li>)
 
-[comment]: <> (    <li><a href="#contributing">Contributing</a></li>)
+[comment]: <> ( <li><a href="#contributing">Contributing</a></li>)
 
-[comment]: <> (    <li><a href="#license">License</a></li>)
+[comment]: <> ( <li><a href="#license">License</a></li>)
 
-[comment]: <> (    <li><a href="#contact">Contact</a></li>)
+[comment]: <> ( <li><a href="#contact">Contact</a></li>)
 
-[comment]: <> (    <li><a href="#acknowledgments">Acknowledgments</a></li>)
+[comment]: <> ( <li><a href="#acknowledgments">Acknowledgments</a></li>)
 
-[comment]: <> (  </ol>)
+[comment]: <> ( </ol>)
 
 [comment]: <> (</details>)
-
-
 
 [comment]: <> (<!-- ABOUT THE PROJECT -->)
 
@@ -98,29 +94,25 @@ Algorithmic_Trading_Python/issues">Request Feature</a>
 
 [comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
 
-
-
 [comment]: <> (### Built With)
 
-[comment]: <> (* [Next.js]&#40;https://nextjs.org/&#41;)
+[comment]: <> (\* [Next.js]&#40;https://nextjs.org/&#41;)
 
-[comment]: <> (* [React.js]&#40;https://reactjs.org/&#41;)
+[comment]: <> (\* [React.js]&#40;https://reactjs.org/&#41;)
 
-[comment]: <> (* [Vue.js]&#40;https://vuejs.org/&#41;)
+[comment]: <> (\* [Vue.js]&#40;https://vuejs.org/&#41;)
 
-[comment]: <> (* [Angular]&#40;https://angular.io/&#41;)
+[comment]: <> (\* [Angular]&#40;https://angular.io/&#41;)
 
-[comment]: <> (* [Svelte]&#40;https://svelte.dev/&#41;)
+[comment]: <> (\* [Svelte]&#40;https://svelte.dev/&#41;)
 
-[comment]: <> (* [Laravel]&#40;https://laravel.com&#41;)
+[comment]: <> (\* [Laravel]&#40;https://laravel.com&#41;)
 
-[comment]: <> (* [Bootstrap]&#40;https://getbootstrap.com&#41;)
+[comment]: <> (\* [Bootstrap]&#40;https://getbootstrap.com&#41;)
 
-[comment]: <> (* [JQuery]&#40;https://jquery.com&#41;)
+[comment]: <> (\* [JQuery]&#40;https://jquery.com&#41;)
 
 [comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
-
-
 
 [comment]: <> (<!-- GETTING STARTED -->)
 
@@ -134,13 +126,13 @@ Algorithmic_Trading_Python/issues">Request Feature</a>
 
 [comment]: <> (This is an example of how to list things you need to use the software and how to install them.)
 
-[comment]: <> (* npm)
+[comment]: <> (\* npm)
 
-[comment]: <> (  ```sh)
+[comment]: <> ( ```sh)
 
-[comment]: <> (  npm install npm@latest -g)
+[comment]: <> ( npm install npm@latest -g)
 
-[comment]: <> (  ```)
+[comment]: <> ( ```)
 
 [comment]: <> (### Installation)
 
@@ -148,31 +140,29 @@ Algorithmic_Trading_Python/issues">Request Feature</a>
 
 [comment]: <> (2. Clone the repo)
 
-[comment]: <> (   ```sh)
+[comment]: <> ( ```sh)
 
-[comment]: <> (   git clone https://github.com/github_username/repo_name.git)
+[comment]: <> ( git clone https://github.com/github_username/repo_name.git)
 
-[comment]: <> (   ```)
+[comment]: <> ( ```)
 
 [comment]: <> (3. Install NPM packages)
 
-[comment]: <> (   ```sh)
+[comment]: <> ( ```sh)
 
-[comment]: <> (   npm install)
+[comment]: <> ( npm install)
 
-[comment]: <> (   ```)
+[comment]: <> ( ```)
 
 [comment]: <> (4. Enter your API in `config.js`)
 
-[comment]: <> (   ```js)
+[comment]: <> ( ```js)
 
-[comment]: <> (   const API_KEY = 'ENTER YOUR API';)
+[comment]: <> ( const API_KEY = 'ENTER YOUR API';)
 
-[comment]: <> (   ```)
+[comment]: <> ( ```)
 
 [comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
-
-
 
 [comment]: <> (<!-- USAGE EXAMPLES -->)
 
@@ -184,8 +174,6 @@ Algorithmic_Trading_Python/issues">Request Feature</a>
 
 [comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
 
-
-
 [comment]: <> (<!-- ROADMAP -->)
 
 [comment]: <> (## Roadmap)
@@ -196,13 +184,11 @@ Algorithmic_Trading_Python/issues">Request Feature</a>
 
 [comment]: <> (- [] Feature 3)
 
-[comment]: <> (    - [] Nested Feature)
+[comment]: <> ( - [] Nested Feature)
 
 [comment]: <> (See the [open issues]&#40;https://github.com/github_username/repo_name/issues&#41; for a full list of proposed features &#40;and known issues&#41;.)
 
 [comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
-
-
 
 [comment]: <> (<!-- CONTRIBUTING -->)
 
@@ -226,8 +212,6 @@ Algorithmic_Trading_Python/issues">Request Feature</a>
 
 [comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
 
-
-
 [comment]: <> (<!-- LICENSE -->)
 
 [comment]: <> (## License)
@@ -235,8 +219,6 @@ Algorithmic_Trading_Python/issues">Request Feature</a>
 [comment]: <> (Distributed under the MIT License. See `LICENSE.txt` for more information.)
 
 [comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
-
-
 
 [comment]: <> (<!-- CONTACT -->)
 
@@ -248,24 +230,21 @@ Algorithmic_Trading_Python/issues">Request Feature</a>
 
 [comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
 
-
-
 [comment]: <> (<!-- ACKNOWLEDGMENTS -->)
 
 [comment]: <> (## Acknowledgments)
 
-[comment]: <> (* []&#40;&#41;)
+[comment]: <> (\* []&#40;&#41;)
 
-[comment]: <> (* []&#40;&#41;)
+[comment]: <> (\* []&#40;&#41;)
 
-[comment]: <> (* []&#40;&#41;)
+[comment]: <> (\* []&#40;&#41;)
 
 [comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/slendershield/Algorithmic_Trading_Python.svg?style=for-the-badge
 [contributors-url]: https://github.com/slendershield/Algorithmic_Trading_Python/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/slendershield/Algorithmic_Trading_Python.svg?style=for-the-badge
