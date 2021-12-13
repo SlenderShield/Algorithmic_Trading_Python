@@ -88,6 +88,18 @@ def rsi(value, neutral, window):
 	return value['return']
 
 
+def beta_function(series):
+	sp500 = yf.download('^GSPC')[['Adj Close']].pct_change(1)
+	sp500.columns = ['SP500']
+
+	# We concatenate the two dataframe
+	value = pd.concat((series, sp500), axis=1)
+
+	# We compute the beta
+	beta = np.cov(value[[series.name, "SP500"]].dropna().values,rowvar=False)[0][1] / np.var(value["SP500"].dropna().values)
+	return beta
+
+
 def drawdown_function(series):
 	cumulative_sum = series.dropna().cumsum() + 1  # multiplication coefficient
 	# compute the max of the cumulative_sum
