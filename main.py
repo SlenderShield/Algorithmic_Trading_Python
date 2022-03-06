@@ -9,7 +9,7 @@ import ta
 from tqdm import tqdm
 from scipy.optimize import minimize
 import warnings
-
+from hurst import compute_Hc
 warnings.filterwarnings("ignore")
 
 
@@ -115,7 +115,7 @@ def backTest(series):
 	sp500.name = 'SP500'
 
 	# We concatenate the two dataframe
-	value = pd.concat([returns, sp500], axis=1).dropna()
+	value = pd.concat([series, sp500], axis=1).dropna()
 
 	# compute the drawdown and max drawdown
 	drawdown = drawdown_function(series)
@@ -157,6 +157,129 @@ def backTest(series):
 	print(f'Beta: {np.round(beta, 3)}')
 	print(f'Alpha: {np.round(alpha, 3)}')
 	print(f'Sortino: {np.round(max_drawdown, 3)}')
+
+
+# using Names CSV file find the best asset
+def best_asset():
+	asset = pd.read_csv('Names.csv')['Symbol']
+
+	# Initialize the list
+	Statistics = []
+	col = []
+
+	for fin in tqdm(asset):
+		# check using yfinance
+		try:
+			print(fin)
+
+			# Download the data of fin
+			dataa = yf.download(fin).dropna()
+			# Create a list of the statistics
+			statistics = list()
+			statistics.append(compute_Hc(dataa['Adj Close'])[0])  # Hurst Exponent
+			statistics.append(np.sqrt(252) * dataa['Adj Close'].pct_change(1).dropna().std())  # volatility
+
+			statistics.append(beta_function(dataa["Adj Close"].pct_change(1).dropna()))  # beta
+
+			statistics.append(rsi(dataa, 5, 14).mean() * 252)  # RSI
+			Statistics.append(statistics)
+			col.append(fin)
+		except Exception as e:
+			pass
+
+	# Create dataframe with all statistics
+	dataframe = pd.DataFrame(Statistics, columns=['Hurst', 'Volatility', 'Beta', 'RSI'], index=col)
+	cluster = pd.read_csv('Names.csv',index_col='Symbol')
+	del cluster['Unnamed: 0']
+	# Concat the type of asset and the statistics
+	dataframe = pd.concat([cluster,dataframe],axis=1).dropna()
+	# Plot the densities
+	sns.displot(data=dataframe, x="RSI",kind='kde', hue="dummy")
+
+	# limit the axis
+	plt.xlim((-1.15,1.15))
+	plt.show()
+	print("Density of startegy returns by Hurst")
+	# We are going to plot density of startegy returns by Hurst
+	dataframe['Hurst_den'] = "Low"
+	dataframe.loc[dataframe['Hurst']>0.55, 'Hurst_den'] = "High"
+	# Plot the density
+	sns.displot(data=dataframe, x="RSI", kind='kde', hue="Hurst_den")
+	# limit and plot the graph
+	plt.xlim(-1.15,1.15)
+	plt.show()
+
+	print("Density of startegy returns by Volatility")
+	# We are going to plot density of startegy returns by Volatility
+	dataframe['vol_den'] = "Low"
+	dataframe.loc[dataframe['Volatility']>0.57, 'vol_den'] = "High"
+	# Plot the density
+	sns.displot(data=dataframe, x="RSI", kind='kde', hue="vol_den")
+	# limit and plot the graph
+	plt.xlim(-1.15,1.15)
+	plt.show()
+
+	print("Density of strategy returns by beta of Assest")
+	# We are going to plot density of startegy returns by class of asset
+	dataframe['beta_den'] = "Low"
+	dataframe.loc[dataframe['Beta']>1, 'beta_den'] = "High"
+	# Plot the density
+	sns.displot(data=dataframe, x="RSI", kind='kde', hue="beta_den")
+	# limit and plot the graph
+	plt.xlim((-1.15,1.15))
+	plt.show()
+
+
+def optimization(data):
+	# Statistical approach for Parameter
+	# We list for the possible values of neutral and window
+	neutral_values = [i*2 for i in range(10)]
+	window_values = [i*2 for i in range(1,11)]
+
+	# Set some dataset
+	start_train,end_train = "2017-01-01",'2019-01-01'
+	start_test,end_test = '2019-01-01','2020-01-01'
+	start_valid,end_valid = '2020-01-01','2021-01-01'
+
+	# Initialize the list
+	result = []
+
+	for i in range(len(neutral_values)):
+		for j in range(len(window_values)):
+			# Compute the return
+			return_train = rsi(data.loc[start_train:end_train],neutral_values[i],window_values[j])
+			return_test = rsi(data.loc[start_test:end_test],neutral_values[i],window_values[j])
+
+			# Compute the sortino
+			sortino_train = np.sqrt(252) * return_train.mean() / (return_train[return_train<0].std() + 0.00001)
+			sortino_test = np.sqrt(252) * return_test.mean() / (return_test[return_test<0].std() + 0.00001)
+
+			values = [neutral_values[i],window_values[j],sortino_train,sortino_test]
+			result.append(values)
+
+	dataframe = pd.DataFrame(result,columns=["Neutral","Window","Sortino_train","Sortino_test"])
+	ordered_data = dataframe.sort_values(by=["Sortino_train"],ascending=False)
+	for i in range(len(dataframe)):
+		# Take the best
+		best = ordered_data.iloc[0+i:1+i,:]
+
+		# Extract the sortino
+		sortino_train = best["Sortino_train"].values[0]
+		sortino_test = best["Sortino_test"].values[0]
+
+		# Take best neutral and window
+		best_neutral = best["Neutral"].values[0]
+		best_window = best["Window"].values[0]
+
+		# If the best is found, we stop the loop
+		if sortino_test > 0.5 and sortino_train > 0.5:
+			break
+		else:
+			best_neutral = 0
+			best_window = 0
+			sortino_train = 0
+			sortino_test = 0
+	return [best_neutral,best_window,sortino_train,sortino_test]
 
 
 # import the data
