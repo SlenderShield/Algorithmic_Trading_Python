@@ -28,23 +28,6 @@ increased the speed of trades, but also made it harder to understand the market.
 
 - Libraries can be installed using `pip` command
 
-### Executing program
-
-- How to run the program
-- Step-by-step bullets
-
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-
-```
-command to run if program contains helper info
-```
-
 ## Authors
 
 Muralidhara Bhat KS
